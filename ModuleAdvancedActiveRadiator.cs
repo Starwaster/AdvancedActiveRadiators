@@ -64,18 +64,6 @@ namespace AdvancedActiveRadiators
 					print ("adding RESOURCE " + n.GetValue("name") + " = " + rate.ToString());
 				}
 			}
-			foreach (ConfigNode c in node.GetNodes("HEATPUMP_NODE"))
-			{
-				print("searching HEATPUMP_NODE");
-				if (c.HasValue("name"))
-				{
-					string nodeName = c.GetValue("name");
-					print("adding " + nodeName);
-					attachNodeNames.Add(nodeName);
-				}
-				
-			}
-			
 		}
 
 		public class ResourceRate
